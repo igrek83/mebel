@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <div class="page">
+    <section class="popup">
+      <div class="popup__container">
+        <button type="button" class="popup__close"></button>
+        <h3 class="popup__title">Верстка</h3>
+        <p class="popup__description">MySQL, PHP, HTML, CSS, JavaScript, JQuery, Ajax. Уверенное 
+          владение PHP. Уверенное владение SQL
+        </p>
+        <span class="popup__span">Мы ждем от тебя:</span>
+        <ul class="popup__ul">
+          <li class="popup__li">скрупулезность при поиске и внесении информации на сайт</li>
+          <li class="popup__li">перфекционизм, дотошность, стремление сделать все идеально</li>
+          <li class="popup__li">готовность как к многозадачности, так и к плотной работе с одной задачей</li>
+          <li class="popup__li">умение планировать свое время</li>
+          <li class="popup__li">отчетность, ответственность за свои действия</li>
+        </ul>
+        <button type="button" class="popup__button">Откликнуться</button>
+      </div>
+    </section>
+    <header class="header">
+    </header>
+    <main class="main">
+      <section class="about">
+        <div class="about__container">
+          <img src="<%=require(`./images/logo.svg`).default%>" alt="logo" class="about__logo">
+          <p class="about__description">НТК Трейд – группа компаний, занимающаяся продажей бытовой 
+            техники через свои сайты в интернете. На сегодняшний день – это 45 магазинов техники: от 
+            эконом до премиум сегмента и большая команда сотрудников, которая занимается созданием, 
+            продвижением сайтов компании, а так же продажей товаров.
+          </p>
+        </div>
+        <div class="about__block">
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/asko.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/asko-color.png`).default%>" alt="logo" class="about__image">
+          </a>
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/miele.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/miele-color.png`).default%>" alt="logo" class="about__image">
+          </a> 
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/blanco.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/blanco-color.png`).default%>" alt="logo" class="about__image">
+          </a>
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/bone.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/bone-color.png`).default%>" alt="logo" class="about__image">
+          </a>
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/elica.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/elica-color.png`).default%>" alt="logo" class="about__image">
+          </a>
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/gorenje.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/gorenje-color.png`).default%>" alt="logo" class="about__image">
+          </a> 
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/liebherr.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/liebherr-color.png`).default%>" alt="logo" class="about__image">
+          </a>
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/kuppers.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/kuppers-color.png`).default%>" alt="logo" class="about__image">
+          </a>
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/hitachi.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/hitachi-color.png`).default%>" alt="logo" class="about__image">
+          </a>
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/korting.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/korting-color.png`).default%>" alt="logo" class="about__image">
+          </a> 
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/neff.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/neff-color.png`).default%>" alt="logo" class="about__image">
+          </a>
+          <a href="#" rel="noopener" target="_blank" class="about__link">
+            <img src="<%=require(`./images/bosch.png`).default%>" alt="logo" class="about__image is-opened">
+            <img src="<%=require(`./images/bosch-color.png`).default%>" alt="logo" class="about__image">
+          </a>             
+        </div>
+      </section>
+      <section class="direction">
+        <div class="direction__container">
+          <h3 class="direction__title">Наши направления</h3>
+          <ul class="direction__box">
+            <li class="direction__item">
+              <h4 class="direction__item-title">Программирование</h4>
+              <p class="direction__text">MySQL, PHP, HTML, CSS, JavaScript, JQuery, Ajax. Уверенное владение PHP. 
+                Уверенное владение SQL
+              </p>
+              <div class="direction__block">
+                <div class="direction__mini-block">
+                  <span class="direction__sign">!</span>
+                  <span class="direction__span">Чего мы ждем от тебя?</span>
+                </div>
+                <button type="button" class="direction__button">Откликнуться</button>
+              </div>
+            </li>
+            <li class="direction__item">
+              <h4 class="direction__item-title">Верстка</h4>
+              <p class="direction__text">MySQL, PHP, HTML, CSS, JavaScript, JQuery, Ajax. Уверенное владение PHP. 
+                Уверенное владение SQL
+              </p>
+              <div class="direction__block">
+                <div class="direction__mini-block">
+                  <span class="direction__sign">!</span>
+                  <span class="direction__span">Чего мы ждем от тебя?</span>
+                </div>
+                <button type="button" class="direction__button">Откликнуться</button>
+              </div>
+            </li>
+            <li class="direction__item">
+              <h4 class="direction__item-title">Контент</h4>
+              <p class="direction__text">MySQL, PHP, HTML, CSS, JavaScript, JQuery, Ajax. Уверенное владение PHP. 
+                Уверенное владение SQL
+              </p>
+              <div class="direction__block">
+                <div class="direction__mini-block">
+                  <span class="direction__sign">!</span>
+                  <span class="direction__span">Чего мы ждем от тебя?</span>
+                </div>
+                <button type="button" class="direction__button">Откликнуться</button>
+              </div>
+            </li>
+            <li class="direction__item">
+              <h4 class="direction__item-title">Аналитика</h4>
+              <p class="direction__text">MySQL, PHP, HTML, CSS, JavaScript, JQuery, Ajax. Уверенное владение PHP. 
+                Уверенное владение SQL
+              </p>
+              <div class="direction__block">
+                <div class="direction__mini-block">
+                  <span class="direction__sign">!</span>
+                  <span class="direction__span">Чего мы ждем от тебя?</span>
+                </div>
+                <button type="button" class="direction__button">Откликнуться</button>
+              </div>
+            </li>
+            <li class="direction__item">
+              <h4 class="direction__item-title">SEO специалисты</h4>
+              <p class="direction__text">MySQL, PHP, HTML, CSS, JavaScript, JQuery, Ajax. Уверенное владение PHP. 
+                Уверенное владение SQL
+              </p>
+              <div class="direction__block">
+                <div class="direction__mini-block">
+                  <span class="direction__sign">!</span>
+                  <span class="direction__span">Чего мы ждем от тебя?</span>
+                </div>
+                <button type="button" class="direction__button">Откликнуться</button>
+              </div>
+            </li>
+            <li class="direction__item">
+              <h4 class="direction__item-title">Программирование</h4>
+              <p class="direction__text">MySQL, PHP, HTML, CSS, JavaScript, JQuery, Ajax. Уверенное владение PHP. 
+                Уверенное владение SQL
+              </p>
+              <div class="direction__block">
+                <div class="direction__mini-block">
+                  <span class="direction__sign">!</span>
+                  <span class="direction__span">Чего мы ждем от тебя?</span>
+                </div>
+                <button type="button" class="direction__button">Откликнуться</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+    </footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+.direction {
+  display: flex;
+  justify-content: center;
+  background: $color-white;
+  width: 100%;
+  padding: 50px 0 100px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 1240px;
+  }
+
+  &__title {
+    @include text($font, 500, 40px, 180%, $color-black);
+    margin-bottom: 30px;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+  }
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 571px;
+    height: 237px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px 32px;
+  }
+
+  &__item-title {
+    @include text($font, 500, 24px, 180%, $color-black);
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    @include text($font, normal, 16px, 180%, #737373);
+    margin-bottom: 24px;
+  }
+
+  &__block {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__mini-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 195px;
+  }
+
+  &__sign {
+    display: inline-flex;
+    justify-content: center;
+    @include text($font, bold, 10px, 120%, $color-black);
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid $color-black;
+    padding-top: 2px;
+  }
+
+  &__span {
+    @include text($font, 500, 16px, 180%, $color-black);
+  }
+
+  &__button {
+    -webkit-tap-highlight-color: transparent;
+    @include text($font, 500, 18px, 180%, $color-white);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 213px;
+    height: 48px;
+    border-radius: 8px;
+    background: #D3232A;
+  }
+
+  &__item:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+  }
+
+  &__item:hover>&__item-title {
+    color: #d3232a;
+  }
+
+  &__item:hover>&__block {
+    display: flex;
+  }
+
+  @media all and (max-width: 1440px) {
+    &__container {
+      align-items: center;
+      width: 100%;
+    }
+
+    &__box {
+      grid-template-columns: repeat(1, 1fr);
+      width: 571px;
+    }
+  }
+}
